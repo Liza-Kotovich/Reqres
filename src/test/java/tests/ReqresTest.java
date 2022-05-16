@@ -137,6 +137,7 @@ public class ReqresTest {
                 .password("pistol")
                 .build();
         given()
+                .header("Content-Type", "application/json")
                 .body(user)
                 .when()
                 .post("https://reqres.in/api/register")
@@ -168,6 +169,7 @@ public class ReqresTest {
                 .password("cityslicka")
                 .build();
         given()
+                .header("Content-Type", "application/json")
                 .body(user)
                 .when()
                 .post("https://reqres.in/api/login")
