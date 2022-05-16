@@ -129,7 +129,7 @@ public class ReqresTest {
                 .statusCode(204);
     }
 
-    //failed
+
     @Test
     public void successfulRegisterTest() {
         User user = User.builder()
@@ -161,7 +161,7 @@ public class ReqresTest {
                 .statusCode(400);
     }
 
-    //failed
+
     @Test
     public void successfulLoginTest() {
         User user = User.builder()
